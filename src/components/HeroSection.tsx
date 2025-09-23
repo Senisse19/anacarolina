@@ -77,7 +77,7 @@ const HeroSection = () => {
             </div>
           </div>
           
-          <div className={`relative order-first lg:order-last animate-on-scroll animate-on-scroll-delay ${isVisible ? 'in-view' : ''}`}>
+          <div className={`relative animate-on-scroll animate-on-scroll-delay ${isVisible ? 'in-view' : ''}`}>
             <div className="relative z-10">
               <img src={anaHero} alt="Ana Carolina Tavares - Estrategista Digital" className="w-full h-auto rounded-xl sm:rounded-2xl shadow-elegant" />
             </div>
