@@ -1,7 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import anaHero from "@/assets/ana-hero.jpg";
-import { ArrowRight, Instagram, TrendingUp, Linkedin, Video } from "lucide-react";
+import { ArrowRight, Instagram, TrendingUp, Linkedin } from "lucide-react";
+import { TikTokIcon } from "@/components/icons/TikTokIcon";
 const HeroSection = () => {
   const {
     ref: sectionRef,
@@ -60,7 +61,7 @@ const HeroSection = () => {
                 className="group hover:bg-primary hover:text-primary-foreground transition-colors" 
                 onClick={() => window.open('https://www.tiktok.com/@anacarolinaamkt', '_blank')}
               >
-                <Video className="w-5 h-5" />
+                <TikTokIcon className="w-5 h-5" />
               </Button>
             </div>
             
