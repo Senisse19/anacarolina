@@ -63,7 +63,7 @@ const ResultsSection = () => {
                 <img 
                   src={feedback.image} 
                   alt={feedback.alt}
-                  className="w-full h-full object-contain sm:object-cover bg-background"
+                  className="w-full h-full object-contain bg-background"
                 />
               </div>
             ))}
@@ -89,12 +89,12 @@ const ResultsSection = () => {
             Clientes que Confiam no Nosso Trabalho:
           </h3>
           
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4 max-w-4xl mx-auto">
+          <div className="flex flex-wrap justify-center gap-3 sm:gap-4 max-w-5xl mx-auto">
             {clients.map((client, index) => (
               <button
                 key={index}
                 onClick={() => window.open(client.url, '_blank')}
-                className="group flex items-center justify-center space-x-2 p-3 sm:p-4 bg-background rounded-lg shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 text-sm sm:text-base"
+                className="group flex items-center justify-center space-x-2 p-3 sm:p-4 bg-background rounded-lg shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 text-sm sm:text-base flex-shrink-0 min-w-[200px] sm:min-w-[220px]"
               >
                 <span className="text-primary font-medium truncate">{client.name}</span>
                 <ExternalLink className="w-3 h-3 sm:w-4 sm:h-4 text-muted-foreground group-hover:text-primary transition-colors flex-shrink-0" />

@@ -23,7 +23,7 @@ const AboutSection = () => {
               </h2>
               
               <div className="space-y-4 text-base sm:text-lg text-muted-foreground leading-relaxed">
-                <p>Fiz meu primeiro post como Social Media em Fevereiro de 2022 e desde então já atendi mais de 50 clientes em todo o Brasil.</p>
+                <p>Fiz meu primeiro post como Social Media em Fevereiro de 2022 e desde então já atendi mais de 50 clientes de diversos segmentos.</p>
                 <p>
                   Hoje, lidero uma agência de marketing com um time de profissionais de edição 
                   de vídeo, tráfego pago e design. Juntos, criamos estratégias completas que 
@@ -38,8 +38,8 @@ const AboutSection = () => {
                 <div className="text-xs sm:text-sm text-muted-foreground">Clientes Atendidos</div>
               </div>
               <div className="text-center p-3 sm:p-4 bg-background rounded-lg shadow-sm">
-                <div className="text-xl sm:text-2xl font-bold text-primary">Brasil</div>
-                <div className="text-xs sm:text-sm text-muted-foreground">Foco Nacional</div>
+                <div className="text-xl sm:text-2xl font-bold text-primary">2022</div>
+                <div className="text-xs sm:text-sm text-muted-foreground">Início da Jornada</div>
               </div>
             </div>
           </div>
