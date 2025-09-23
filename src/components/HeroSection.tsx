@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import anaHero from "@/assets/ana-hero.jpg";
-import { ArrowRight, Instagram, TrendingUp } from "lucide-react";
+import { ArrowRight, Instagram, TrendingUp, Linkedin, Video } from "lucide-react";
 const HeroSection = () => {
   const {
     ref: sectionRef,
@@ -34,6 +34,33 @@ const HeroSection = () => {
               <Button variant="cta" size="lg" className="group w-full sm:w-auto" onClick={() => window.open('https://api.whatsapp.com/send/?phone=5551991587917&text&type=phone_number&app_absent=0', '_blank')}>
                 Quero Aprender com Você
                 <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" />
+              </Button>
+            </div>
+            
+            <div className="flex justify-center sm:justify-start gap-4">
+              <Button 
+                variant="outline" 
+                size="icon" 
+                className="group hover:bg-primary hover:text-primary-foreground transition-colors" 
+                onClick={() => window.open('https://www.instagram.com/anacarolinaadt/', '_blank')}
+              >
+                <Instagram className="w-5 h-5" />
+              </Button>
+              <Button 
+                variant="outline" 
+                size="icon" 
+                className="group hover:bg-primary hover:text-primary-foreground transition-colors" 
+                onClick={() => window.open('https://www.linkedin.com/in/ana-carolina-tavares-marketing/', '_blank')}
+              >
+                <Linkedin className="w-5 h-5" />
+              </Button>
+              <Button 
+                variant="outline" 
+                size="icon" 
+                className="group hover:bg-primary hover:text-primary-foreground transition-colors" 
+                onClick={() => window.open('https://www.tiktok.com/@anacarolinaamkt', '_blank')}
+              >
+                <Video className="w-5 h-5" />
               </Button>
             </div>
             
