@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { ExternalLink } from "lucide-react";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import feedbackAmanda from "@/assets/feedback-amanda-becker.jpg";
 import feedbackLuana from "@/assets/feedback-luana.jpg";
 import feedbackBeatriz from "@/assets/feedback-beatriz.jpg";
@@ -8,6 +9,7 @@ import feedbackTovi from "@/assets/feedback-tovi.jpg";
 
 const ResultsSection = () => {
   const [currentFeedback, setCurrentFeedback] = useState(0);
+  const { ref: sectionRef, isVisible } = useScrollAnimation();
 
   const feedbacks = [
     { image: feedbackAmanda, alt: "Feedback Amanda Becker" },
@@ -36,21 +38,21 @@ const ResultsSection = () => {
   }, [feedbacks.length]);
 
   return (
-    <section id="resultados" className="py-20 bg-card">
+    <section id="resultados" className="py-12 sm:py-20 bg-card" ref={sectionRef}>
       <div className="container mx-auto px-4">
-        <div className="text-center space-y-6 mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary">
+        <div className={`text-center space-y-6 mb-12 sm:mb-16 animate-on-scroll ${isVisible ? 'in-view' : ''}`}>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary">
             Resultados Reais que{" "}
             <span className="text-gradient">Falam por Si</span>
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
             Confira o impacto do nosso trabalho em diferentes negócios
           </p>
         </div>
 
         {/* Dynamic Feedback Carousel */}
-        <div className="max-w-4xl mx-auto mb-16">
-          <div className="relative h-96 md:h-[500px] overflow-hidden rounded-2xl shadow-elegant">
+        <div className={`max-w-4xl mx-auto mb-12 sm:mb-16 animate-on-scroll animate-on-scroll-delay ${isVisible ? 'in-view' : ''}`}>
+          <div className="relative h-[300px] sm:h-96 md:h-[500px] overflow-hidden rounded-xl sm:rounded-2xl shadow-elegant">
             {feedbacks.map((feedback, index) => (
               <div
                 key={index}
@@ -61,7 +63,7 @@ const ResultsSection = () => {
                 <img 
                   src={feedback.image} 
                   alt={feedback.alt}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain sm:object-cover bg-background"
                 />
               </div>
             ))}
@@ -82,20 +84,20 @@ const ResultsSection = () => {
         </div>
 
         {/* Simplified Client List */}
-        <div className="text-center space-y-8">
-          <h3 className="text-2xl font-bold text-primary">
+        <div className={`text-center space-y-6 sm:space-y-8 animate-on-scroll animate-on-scroll-delay-2 ${isVisible ? 'in-view' : ''}`}>
+          <h3 className="text-xl sm:text-2xl font-bold text-primary">
             Clientes que Confiam no Nosso Trabalho:
           </h3>
           
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4 max-w-4xl mx-auto">
             {clients.map((client, index) => (
               <button
                 key={index}
                 onClick={() => window.open(client.url, '_blank')}
-                className="group flex items-center justify-center space-x-2 p-4 bg-background rounded-lg shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1"
+                className="group flex items-center justify-center space-x-2 p-3 sm:p-4 bg-background rounded-lg shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 text-sm sm:text-base"
               >
-                <span className="text-primary font-medium">{client.name}</span>
-                <ExternalLink className="w-4 h-4 text-muted-foreground group-hover:text-primary transition-colors" />
+                <span className="text-primary font-medium truncate">{client.name}</span>
+                <ExternalLink className="w-3 h-3 sm:w-4 sm:h-4 text-muted-foreground group-hover:text-primary transition-colors flex-shrink-0" />
               </button>
             ))}
           </div>
