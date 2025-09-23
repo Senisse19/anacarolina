@@ -28,7 +28,7 @@ const HeroSection = () => {
                 variant="hero" 
                 size="lg"
                 className="group"
-                onClick={() => window.open('#', '_blank')}
+                onClick={() => window.open('https://api.whatsapp.com/send/?phone=5551991587917&text&type=phone_number&app_absent=0', '_blank')}
               >
                 Solicitar Orçamento
                 <TrendingUp className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -37,7 +37,7 @@ const HeroSection = () => {
                 variant="cta" 
                 size="lg"
                 className="group"
-                onClick={() => window.open('#', '_blank')}
+                onClick={() => window.open('https://api.whatsapp.com/send/?phone=5551991587917&text&type=phone_number&app_absent=0', '_blank')}
               >
                 Quero Aprender com Você
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -51,7 +51,7 @@ const HeroSection = () => {
               </div>
               <div className="flex items-center gap-2">
                 <span className="w-2 h-2 bg-accent rounded-full"></span>
-                <span>3 países (Brasil, Portugal, EUA)</span>
+                <span>Foco no mercado brasileiro</span>
               </div>
             </div>
           </div>

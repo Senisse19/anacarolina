@@ -2,7 +2,7 @@ import anaAbout from "@/assets/ana-about.jpg";
 
 const AboutSection = () => {
   return (
-    <section className="py-20 bg-card">
+    <section id="sobre-mim" className="py-20 bg-card">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="relative order-2 lg:order-1">
@@ -26,7 +26,7 @@ const AboutSection = () => {
               <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
                 <p>
                   Fiz meu primeiro post como Social Media em Fevereiro de 2022 e desde então 
-                  já atendi mais de 150 clientes em diferentes países (Brasil, Portugal e EUA).
+                  já atendi mais de 150 clientes em todo o Brasil.
                 </p>
                 <p>
                   Hoje, lidero uma agência de marketing com um time de profissionais de edição 
@@ -42,8 +42,8 @@ const AboutSection = () => {
                 <div className="text-sm text-muted-foreground">Clientes Atendidos</div>
               </div>
               <div className="text-center p-4 bg-background rounded-lg shadow-sm">
-                <div className="text-2xl font-bold text-primary">3</div>
-                <div className="text-sm text-muted-foreground">Países</div>
+                <div className="text-2xl font-bold text-primary">Brasil</div>
+                <div className="text-sm text-muted-foreground">Foco Nacional</div>
               </div>
             </div>
           </div>

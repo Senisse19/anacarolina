@@ -3,7 +3,7 @@ import { ArrowRight, TrendingUp, Sparkles } from "lucide-react";
 
 const CTASection = () => {
   return (
-    <section className="py-20 bg-card">
+    <section id="contato" className="py-20 bg-card">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center space-y-8">
           <div className="space-y-6">
@@ -27,7 +27,7 @@ const CTASection = () => {
               variant="hero" 
               size="lg"
               className="group w-full sm:w-auto"
-              onClick={() => window.open('#', '_blank')}
+              onClick={() => window.open('https://api.whatsapp.com/send/?phone=5551991587917&text&type=phone_number&app_absent=0', '_blank')}
             >
               Solicitar Orçamento
               <TrendingUp className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -37,7 +37,7 @@ const CTASection = () => {
               variant="cta" 
               size="lg"
               className="group w-full sm:w-auto"
-              onClick={() => window.open('#', '_blank')}
+              onClick={() => window.open('https://api.whatsapp.com/send/?phone=5551991587917&text&type=phone_number&app_absent=0', '_blank')}
             >
               Quero Aprender com Você
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
