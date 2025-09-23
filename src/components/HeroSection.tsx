@@ -43,8 +43,8 @@ const HeroSection = () => {
                 <span>+50 clientes atendidos</span>
               </div>
               <div className="flex items-center gap-2">
-                <span className="w-2 h-2 bg-accent rounded-full"></span>
-                <span>Foco no mercado brasileiro</span>
+                
+                
               </div>
             </div>
           </div>
