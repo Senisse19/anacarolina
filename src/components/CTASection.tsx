@@ -40,7 +40,7 @@ const CTASection = () => {
               variant="cta" 
               size="lg"
               className="group w-full sm:w-auto"
-              onClick={() => window.open('https://api.whatsapp.com/send/?phone=5551991587917&text&type=phone_number&app_absent=0', '_blank')}
+              onClick={() => window.open('https://forms.gle/P44Ewhcph7725YqK8', '_blank')}
             >
               Quero Aprender com Você
               <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" />
