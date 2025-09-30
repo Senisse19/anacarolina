@@ -14,8 +14,8 @@ const HeroSection = () => {
           <div className={`space-y-6 sm:space-y-8 animate-on-scroll ${isVisible ? 'in-view' : ''}`}>
             <div className="space-y-4 sm:space-y-6">
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-                Sua presença digital nas mãos de uma{" "}
-                <span className="text-gradient">especialista</span>
+                Seu Instagram não precisa de mais posts. Precisa de{" "}
+                <span className="text-gradient">direção</span>.
               </h1>
               <h2 className="text-lg sm:text-xl md:text-2xl font-medium text-primary">
                 Eu transformo seu Instagram em uma máquina de vendas e autoridade.
