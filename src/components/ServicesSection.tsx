@@ -1,6 +1,6 @@
 import { Smartphone, TrendingUp, Calendar, PenTool, Video, BarChart3 } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import anaServices from "@/assets/ana-services.jpg";
+import anaServices from "@/assets/ana-services-new.jpg";
 
 const ServicesSection = () => {
   const { ref: sectionRef, isVisible } = useScrollAnimation();
