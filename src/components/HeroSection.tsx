@@ -20,11 +20,7 @@ const HeroSection = () => {
               <h2 className="text-lg sm:text-xl md:text-2xl font-medium text-primary">
                 Eu transformo seu Instagram em uma máquina de vendas e autoridade.
               </h2>
-              <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
-                Chega de postar sem resultados. Com estratégias que unem criatividade, 
-                storytelling e performance, eu atraio os clientes certos para o seu negócio 
-                enquanto você foca no que realmente importa.
-              </p>
+              <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">C</p>
             </div>
             
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
@@ -39,28 +35,13 @@ const HeroSection = () => {
             </div>
             
             <div className="flex justify-center sm:justify-start gap-4">
-              <Button 
-                variant="outline" 
-                size="icon" 
-                className="group hover:bg-primary hover:text-primary-foreground transition-colors" 
-                onClick={() => window.open('https://www.instagram.com/anacarolinaadt/', '_blank')}
-              >
+              <Button variant="outline" size="icon" className="group hover:bg-primary hover:text-primary-foreground transition-colors" onClick={() => window.open('https://www.instagram.com/anacarolinaadt/', '_blank')}>
                 <Instagram className="w-5 h-5" />
               </Button>
-              <Button 
-                variant="outline" 
-                size="icon" 
-                className="group hover:bg-primary hover:text-primary-foreground transition-colors" 
-                onClick={() => window.open('https://www.linkedin.com/in/ana-carolina-tavares-marketing/', '_blank')}
-              >
+              <Button variant="outline" size="icon" className="group hover:bg-primary hover:text-primary-foreground transition-colors" onClick={() => window.open('https://www.linkedin.com/in/ana-carolina-tavares-marketing/', '_blank')}>
                 <Linkedin className="w-5 h-5" />
               </Button>
-              <Button 
-                variant="outline" 
-                size="icon" 
-                className="group hover:bg-primary hover:text-primary-foreground transition-colors" 
-                onClick={() => window.open('https://www.tiktok.com/@anacarolinaamkt', '_blank')}
-              >
+              <Button variant="outline" size="icon" className="group hover:bg-primary hover:text-primary-foreground transition-colors" onClick={() => window.open('https://www.tiktok.com/@anacarolinaamkt', '_blank')}>
                 <TikTokIcon className="w-5 h-5" />
               </Button>
             </div>
