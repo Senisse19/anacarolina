@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import anaHero from "@/assets/ana-hero.jpg";
+import anaHero from "@/assets/ana-services.jpg";
 import { ArrowRight, Instagram, TrendingUp, Linkedin } from "lucide-react";
 import { TikTokIcon } from "@/components/icons/TikTokIcon";
 const HeroSection = () => {
