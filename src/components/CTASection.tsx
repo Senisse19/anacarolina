@@ -1,12 +1,12 @@
 import { Button } from "@/components/ui/button";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { ArrowRight, TrendingUp, Sparkles } from "lucide-react";
-
 const CTASection = () => {
-  const { ref: sectionRef, isVisible } = useScrollAnimation();
-
-  return (
-    <section id="contato" className="py-12 sm:py-20 bg-card" ref={sectionRef}>
+  const {
+    ref: sectionRef,
+    isVisible
+  } = useScrollAnimation();
+  return <section id="contato" className="py-12 sm:py-20 bg-card" ref={sectionRef}>
       <div className="container mx-auto px-4">
         <div className={`max-w-4xl mx-auto text-center space-y-6 sm:space-y-8 animate-on-scroll ${isVisible ? 'in-view' : ''}`}>
           <div className="space-y-4 sm:space-y-6">
@@ -26,34 +26,22 @@ const CTASection = () => {
           </div>
           
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center">
-            <Button 
-              variant="hero" 
-              size="lg"
-              className="group w-full sm:w-auto"
-              onClick={() => window.open('https://api.whatsapp.com/send/?phone=5551991587917&text&type=phone_number&app_absent=0', '_blank')}
-            >
+            <Button variant="hero" size="lg" className="group w-full sm:w-auto" onClick={() => window.open('https://api.whatsapp.com/send/?phone=5551991587917&text&type=phone_number&app_absent=0', '_blank')}>
               Solicitar Orçamento
               <TrendingUp className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
             
-            <Button 
-              variant="cta" 
-              size="lg"
-              className="group w-full sm:w-auto"
-              onClick={() => window.open('https://forms.gle/P44Ewhcph7725YqK8', '_blank')}
-            >
+            <Button variant="cta" size="lg" className="group w-full sm:w-auto" onClick={() => window.open('https://forms.gle/P44Ewhcph7725YqK8', '_blank')}>
               Quero Aprender com Você
               <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
           </div>
           
           <div className="pt-6 sm:pt-8 text-xs sm:text-sm text-muted-foreground">
-            <p>✨ Resposta em até 24 horas • Consultoria personalizada • Resultados garantidos</p>
+            <p>✨ Resposta em até 24 horas • Consultoria personalizada </p>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default CTASection;
