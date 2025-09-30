@@ -20,7 +20,7 @@ const HeroSection = () => {
               <h2 className="text-lg sm:text-xl md:text-2xl font-medium text-primary">
                 Eu transformo seu Instagram em uma máquina de vendas e autoridade.
               </h2>
-              <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">C</p>
+              <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">Seja para entregar a gestão completa do seu Instagram ou aprender as estratégias que aplico nos bastidores, o objetivo é o mesmo: construir um perfil que conecta, fortalece sua autoridade e transforma seguidores em clientes.</p>
             </div>
             
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
