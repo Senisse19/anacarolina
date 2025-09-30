@@ -26,7 +26,7 @@ const CTASection = () => {
           </div>
           
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center">
-            <Button variant="hero" size="lg" className="group w-full sm:w-auto" onClick={() => window.open('https://api.whatsapp.com/send/?phone=5551991587917&text&type=phone_number&app_absent=0', '_blank')}>
+            <Button variant="hero" size="lg" className="group w-full sm:w-auto" onClick={() => window.open('https://api.whatsapp.com/send/?phone=5551991587917&text=Oii+Ana%2C+gostaria+de+saber+mais+sobre+teus+serviços&type=phone_number&app_absent=0', '_blank')}>
               Solicitar Orçamento
               <TrendingUp className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
