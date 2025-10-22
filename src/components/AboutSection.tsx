@@ -15,7 +15,7 @@ const AboutSection = () => {
             <div className="absolute -bottom-4 -left-4 sm:-bottom-8 sm:-left-8 w-full h-full bg-secondary/30 rounded-xl sm:rounded-2xl -z-10"></div>
           </div>
           
-          <div className={`space-y-6 sm:space-y-8 order-1 lg:order-2 animate-on-scroll ${isVisible ? 'in-view' : ''}`}>
+          <div className={`space-y-6 sm:space-y-8 order-1 lg:order-2 text-center lg:text-left animate-on-scroll ${isVisible ? 'in-view' : ''}`}>
             <div className="space-y-4 sm:space-y-6">
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary">
                 Prazer, me chamo{" "}

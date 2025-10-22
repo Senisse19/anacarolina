@@ -2,7 +2,7 @@ import { Instagram, Mail, MapPin, Linkedin } from "lucide-react";
 const Footer = () => {
   return <footer className="bg-primary text-primary-foreground py-12">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
           <div className="space-y-4">
             <h3 className="text-xl font-bold">Ana Carolina Tavares</h3>
             <p className="text-primary-foreground/80">
@@ -34,7 +34,7 @@ const Footer = () => {
               </div>
               <div className="flex flex-col space-y-2">
                 <h5 className="font-medium text-primary-foreground">Redes Sociais</h5>
-                <div className="flex space-x-4">
+                <div className="flex flex-wrap justify-center md:justify-start gap-4">
                   <a href="https://www.instagram.com/anacarolinaadt/" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 text-primary-foreground/80 hover:text-primary-foreground transition-colors">
                     <Instagram className="w-4 h-4" />
                     <span>Instagram</span>

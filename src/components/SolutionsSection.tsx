@@ -39,10 +39,10 @@ const SolutionsSection = () => {
           {solutions.map((solution, index) => (
             <div 
               key={index}
-              className={`bg-card p-6 sm:p-8 rounded-xl sm:rounded-2xl shadow-elegant hover:shadow-xl transition-all duration-300 hover:-translate-y-2 animate-on-scroll ${index === 1 ? 'animate-on-scroll-delay' : index === 2 ? 'animate-on-scroll-delay-2' : ''} ${isVisible ? 'in-view' : ''}`}
+              className={`bg-card p-6 sm:p-8 rounded-xl sm:rounded-2xl shadow-elegant hover:shadow-xl transition-all duration-300 hover:-translate-y-2 animate-on-scroll text-center ${index === 1 ? 'animate-on-scroll-delay' : index === 2 ? 'animate-on-scroll-delay-2' : ''} ${isVisible ? 'in-view' : ''}`}
             >
               <div className="space-y-4 sm:space-y-6">
-                <div className="w-12 h-12 sm:w-16 sm:h-16 bg-accent/20 rounded-xl sm:rounded-2xl flex items-center justify-center">
+                <div className="w-12 h-12 sm:w-16 sm:h-16 bg-accent/20 rounded-xl sm:rounded-2xl flex items-center justify-center mx-auto">
                   <solution.icon className="w-6 h-6 sm:w-8 sm:h-8 text-primary" />
                 </div>
                 

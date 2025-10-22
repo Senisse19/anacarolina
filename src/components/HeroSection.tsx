@@ -11,7 +11,7 @@ const HeroSection = () => {
   return <section className="hero-gradient min-h-screen flex items-center py-12 sm:py-20" ref={sectionRef}>
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center">
-          <div className={`space-y-6 sm:space-y-8 animate-on-scroll ${isVisible ? 'in-view' : ''}`}>
+          <div className={`space-y-6 sm:space-y-8 text-center lg:text-left animate-on-scroll ${isVisible ? 'in-view' : ''}`}>
             <div className="space-y-4 sm:space-y-6">
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
                 Seu Instagram não precisa de mais posts. Precisa de{" "}
@@ -34,7 +34,7 @@ const HeroSection = () => {
               </Button>
             </div>
             
-            <div className="flex justify-center sm:justify-start gap-4">
+            <div className="flex justify-center lg:justify-start gap-4">
               <Button variant="outline" size="icon" className="group hover:bg-primary hover:text-primary-foreground transition-colors" onClick={() => window.open('https://www.instagram.com/anacarolinaadt/', '_blank')}>
                 <Instagram className="w-5 h-5" />
               </Button>
@@ -46,7 +46,7 @@ const HeroSection = () => {
               </Button>
             </div>
             
-            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-6 text-xs sm:text-sm text-muted-foreground">
+            <div className="flex flex-col sm:flex-row items-center lg:items-start gap-3 sm:gap-6 text-xs sm:text-sm text-muted-foreground justify-center lg:justify-start">
               <div className="flex items-center gap-2">
                 <Instagram className="w-4 h-4" />
                 <span>+150 clientes atendidos</span>
