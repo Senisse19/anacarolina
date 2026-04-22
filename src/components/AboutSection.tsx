@@ -73,7 +73,7 @@ const AboutSection = () => {
 
             <div className="space-y-4 text-base sm:text-lg text-muted-foreground leading-relaxed">
               <p>
-                Fiz meu primeiro post como Social Media em Fevereiro de 2022 e desde então
+                Fiz meu primeiro post como Social media em Fevereiro de 2022 e desde então
                 já atendi mais de 150 clientes de diversos segmentos.
               </p>
               <p>
