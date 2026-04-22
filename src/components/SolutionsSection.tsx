@@ -1,60 +1,90 @@
+"use client";
 import { Target, Users, Clock } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
+const solutions = [
+  {
+    icon: Target,
+    number: "01",
+    title: "Posicionamento de Marca",
+    description:
+      "Transformo seu perfil em uma vitrine fiel da sua marca, destacando sua autenticidade e autoridade para que você seja reconhecido como um profissional diferenciado.",
+    tag: "Estratégia",
+  },
+  {
+    icon: Users,
+    number: "02",
+    title: "Atração de Clientes Qualificados",
+    description:
+      "Com estratégia personalizada e anúncios direcionados, atraio potenciais clientes que realmente se identificam com seus serviços e valores, transformando seu perfil em um canal de vendas.",
+    tag: "Crescimento",
+  },
+  {
+    icon: Clock,
+    number: "03",
+    title: "Devolvo o seu Tempo",
+    description:
+      "Enquanto você se dedica ao seu negócio, nós cuidamos de toda a sua presença digital, desde o planejamento e criação de conteúdo até a postagem. Assumo o trabalho pesado para que você tenha tranquilidade.",
+    tag: "Resultado",
+  },
+];
+
 const SolutionsSection = () => {
-  const { ref: sectionRef, isVisible } = useScrollAnimation();
-  
-  const solutions = [
-    {
-      icon: Target,
-      title: "Posicionamento de Marca",
-      description: "Transformo seu perfil em uma vitrine fiel da sua marca, destacando sua autenticidade e autoridade para que você seja reconhecido como um profissional diferenciado."
-    },
-    {
-      icon: Users,
-      title: "Atração de Clientes Qualificados",
-      description: "Com uma estratégia personalizada e anúncios direcionados, atraio potenciais clientes que realmente se identificam com seus serviços e valores, transformando seu perfil em um canal de vendas."
-    },
-    {
-      icon: Clock,
-      title: "Devolvo o seu Tempo",
-      description: "Enquanto você se dedica ao seu negócio, nós cuidamos de toda a sua presença digital, desde o planejamento e criação de conteúdo até a postagem. Assumo o trabalho pesado para que você tenha tranquilidade."
-    }
-  ];
+  const { ref: sectionRef, isVisible } = useScrollAnimation(0.1);
 
   return (
-    <section id="solucoes" className="py-12 sm:py-20 bg-background" ref={sectionRef}>
-      <div className="container mx-auto px-4">
-        <div className={`text-center space-y-4 sm:space-y-6 mb-12 sm:mb-16 animate-on-scroll ${isVisible ? 'in-view' : ''}`}>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary">
-            Como eu posso transformar{" "}
-            <span className="text-gradient">o seu negócio?</span>
+    <section id="solucoes" className="section-padding bg-background" ref={sectionRef}>
+      <div className="container-wide">
+        {/* Cabeçalho */}
+        <div className={`max-w-2xl mx-auto text-center space-y-4 mb-16 reveal ${isVisible ? "in-view" : ""}`}>
+          <span className="inline-block text-xs font-semibold tracking-widest uppercase text-accent border border-accent/30 rounded-full px-4 py-1.5">
+            Como posso ajudar
+          </span>
+          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-primary leading-tight">
+            Como eu posso{" "}
+            <span className="text-gradient">transformar o seu negócio?</span>
           </h2>
-          <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
-            Ofereço soluções completas para elevar sua presença digital e gerar resultados reais
+          <p className="text-base sm:text-lg text-muted-foreground">
+            Soluções completas para elevar sua presença digital e gerar resultados reais
           </p>
         </div>
-        
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+
+        {/* Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
           {solutions.map((solution, index) => (
-            <div 
+            <div
               key={index}
-              className={`bg-card p-6 sm:p-8 rounded-xl sm:rounded-2xl shadow-elegant hover:shadow-xl transition-all duration-300 hover:-translate-y-2 animate-on-scroll text-center ${index === 1 ? 'animate-on-scroll-delay' : index === 2 ? 'animate-on-scroll-delay-2' : ''} ${isVisible ? 'in-view' : ''}`}
+              className={`relative group bg-card rounded-2xl p-8 shadow-card card-interactive border border-border/50 overflow-hidden reveal ${
+                index === 1 ? "delay-200" : index === 2 ? "delay-400" : ""
+              } ${isVisible ? "in-view" : ""}`}
             >
-              <div className="space-y-4 sm:space-y-6">
-                <div className="w-12 h-12 sm:w-16 sm:h-16 bg-accent/20 rounded-xl sm:rounded-2xl flex items-center justify-center mx-auto">
-                  <solution.icon className="w-6 h-6 sm:w-8 sm:h-8 text-primary" />
-                </div>
-                
-                <div className="space-y-3 sm:space-y-4">
-                  <h3 className="text-lg sm:text-xl font-semibold text-primary">
-                    {solution.title}
-                  </h3>
-                  <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
-                    {solution.description}
-                  </p>
+              {/* Número decorativo de fundo */}
+              <span className="absolute top-4 right-4 font-display text-7xl font-bold text-primary/5 select-none leading-none group-hover:text-primary/8 transition-colors duration-500">
+                {solution.number}
+              </span>
+
+              {/* Ícone */}
+              <div className="relative z-10 mb-6">
+                <div className="w-14 h-14 bg-gradient-to-br from-accent/20 to-secondary/40 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-400">
+                  <solution.icon className="w-7 h-7 text-primary" strokeWidth={1.5} />
                 </div>
               </div>
+
+              {/* Tag */}
+              <span className="inline-block text-[11px] font-semibold tracking-widest uppercase text-accent mb-3">
+                {solution.tag}
+              </span>
+
+              {/* Conteúdo */}
+              <h3 className="font-display text-xl font-bold text-primary mb-3 leading-snug">
+                {solution.title}
+              </h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                {solution.description}
+              </p>
+
+              {/* Borda decorativa na parte inferior que aparece no hover */}
+              <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-accent to-transparent scale-x-0 group-hover:scale-x-100 transition-transform duration-500" />
             </div>
           ))}
         </div>

@@ -1,3 +1,4 @@
+"use client";
 import * as React from "react";
 import { Slot } from "@radix-ui/react-slot";
 import { VariantProps, cva } from "class-variance-authority";
@@ -32,12 +33,12 @@ type SidebarContext = {
 const SidebarContext = React.createContext<SidebarContext | null>(null);
 
 function useSidebar() {
-  const context = React.useContext(SidebarContext);
-  if (!context) {
+  const _context = React.useContext(SidebarContext);
+  if (!_context) {
     throw new Error("useSidebar must be used within a SidebarProvider.");
   }
 
-  return context;
+  return _context;
 }
 
 const SidebarProvider = React.forwardRef<
@@ -532,8 +533,10 @@ const SidebarMenuSkeleton = React.forwardRef<
   }
 >(({ className, showIcon = false, ...props }, ref) => {
   // Random width between 50 to 90%.
-  const width = React.useMemo(() => {
-    return `${Math.floor(Math.random() * 40) + 50}%`;
+  const [width, setWidth] = React.useState("0%");
+  React.useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    setWidth(`${Math.floor(Math.random() * 40) + 50}%`);
   }, []);
 
   return (
