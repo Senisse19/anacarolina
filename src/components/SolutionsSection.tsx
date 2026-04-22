@@ -6,7 +6,7 @@ const solutions = [
   {
     icon: Target,
     number: "01",
-    title: "Posicionamento de Marca",
+    title: "Posicionamento de marca",
     description:
       "Transformo seu perfil em uma vitrine fiel da sua marca, destacando sua autenticidade e autoridade para que você seja reconhecido como um profissional diferenciado.",
     tag: "Estratégia",
@@ -14,17 +14,17 @@ const solutions = [
   {
     icon: Users,
     number: "02",
-    title: "Atração de Clientes Qualificados",
+    title: "Mentoria individual",
     description:
-      "Com estratégia personalizada e anúncios direcionados, atraio potenciais clientes que realmente se identificam com seus serviços e valores, transformando seu perfil em um canal de vendas.",
+      "Aprenda as estratégias que utilizo para escalar perfis e transformar seguidores em clientes fiéis.",
     tag: "Crescimento",
   },
   {
     icon: Clock,
     number: "03",
-    title: "Devolvo o seu Tempo",
+    title: "Gestão completa de Instagram",
     description:
-      "Enquanto você se dedica ao seu negócio, nós cuidamos de toda a sua presença digital, desde o planejamento e criação de conteúdo até a postagem. Assumo o trabalho pesado para que você tenha tranquilidade.",
+      "Cuidamos de tudo: do planejamento estratégico à criação de conteúdo e análise de métricas.",
     tag: "Resultado",
   },
 ];
@@ -41,8 +41,7 @@ const SolutionsSection = () => {
             Como posso ajudar
           </span>
           <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-primary leading-tight">
-            Como eu posso{" "}
-            <span className="text-gradient">transformar o seu negócio?</span>
+            Nossas soluções
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground">
             Soluções completas para elevar sua presença digital e gerar resultados reais

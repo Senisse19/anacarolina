@@ -37,7 +37,7 @@ const ServicesSection = () => {
           <div className={`space-y-8 reveal-left delay-100 ${isVisible ? "in-view" : ""}`}>
             <div className="space-y-3">
               <div className="flex items-center gap-3">
-                <h3 className="font-display text-2xl sm:text-3xl font-bold text-primary">Social Media</h3>
+                <h3 className="font-display text-2xl sm:text-3xl font-bold text-primary">Social media</h3>
                 {/* Tag mais popular */}
                 <span className="flex items-center gap-1 bg-accent/20 text-accent text-[11px] font-bold tracking-wide uppercase rounded-full px-3 py-1 border border-accent/30">
                   <Zap className="w-3 h-3 fill-accent" />
@@ -73,7 +73,7 @@ const ServicesSection = () => {
                 <TrendingUp className="w-7 h-7 text-primary" strokeWidth={1.5} />
               </div>
               <div className="space-y-2">
-                <h4 className="font-display text-xl font-bold text-primary">Estratégia Completa</h4>
+                <h4 className="font-display text-xl font-bold text-primary">Estratégia completa</h4>
                 <p className="text-muted-foreground text-sm leading-relaxed">
                   Desenvolvemos uma presença digital autêntica que conecta sua marca
                   com o público certo e gera resultados mensuráveis.
@@ -106,7 +106,7 @@ const ServicesSection = () => {
           {/* Texto */}
           <div className={`space-y-8 order-1 lg:order-2 reveal-right delay-200 ${isVisible ? "in-view" : ""}`}>
             <div className="space-y-3">
-              <h3 className="font-display text-2xl sm:text-3xl font-bold text-primary">Tráfego Pago</h3>
+              <h3 className="font-display text-2xl sm:text-3xl font-bold text-primary">Tráfego pago</h3>
               <p className="text-muted-foreground leading-relaxed">
                 O tráfego pago é conduzido de forma estratégica e orientada por dados.
                 Com gestão técnica do nosso especialista em performance digital, cada
@@ -117,8 +117,8 @@ const ServicesSection = () => {
 
             <div className="space-y-4">
               {[
-                { icon: BarChart3, title: "Análise de Dados", desc: "Decisões baseadas em métricas reais" },
-                { icon: TrendingUp, title: "Otimização Contínua", desc: "Ajustes constantes para melhor performance" },
+                { icon: BarChart3, title: "Análise de dados", desc: "Decisões baseadas em métricas reais" },
+                { icon: TrendingUp, title: "Otimização contínua", desc: "Ajustes constantes para melhor performance" },
               ].map((item, i) => (
                 <div
                   key={i}

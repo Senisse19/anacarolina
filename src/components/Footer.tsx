@@ -52,7 +52,7 @@ const Footer = () => {
               </h3>
             </button>
             <p className="text-background/60 text-sm leading-relaxed max-w-xs mx-auto md:mx-0">
-              Estrategista Digital especializada em transformar Instagram em
+              Estrategista digital especializada em transformar Instagram em
               ferramentas de vendas e autoridade.
             </p>
             <div className="flex items-center gap-1.5 justify-center md:justify-start text-background/50 text-xs">
@@ -67,7 +67,7 @@ const Footer = () => {
               Serviços
             </h4>
             <ul className="space-y-2.5">
-              {["Social Media", "Tráfego Pago", "Mentoria"].map((s) => (
+              {["Social media", "Tráfego pago", "Mentoria"].map((s) => (
                 <li key={s}>
                   <span className="text-background/70 text-sm hover:text-background transition-colors cursor-default">
                     {s}
@@ -80,7 +80,7 @@ const Footer = () => {
           {/* Redes sociais */}
           <div className="space-y-4">
             <h4 className="font-semibold text-sm tracking-widest uppercase text-background/40">
-              Redes Sociais
+              Redes sociais
             </h4>
             <div className="space-y-3">
               {socialLinks.map(({ icon: Icon, label, handle, url }) => (

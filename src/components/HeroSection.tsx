@@ -54,7 +54,7 @@ const HeroSection = () => {
                 className="group btn-shimmer rounded-full font-semibold gap-2 px-7"
                 onClick={() => window.open("https://api.whatsapp.com/send/?phone=555192319521&text=Olá%20Ana%2C%20gostaria%20de%20saber%20mais%20sobre%20seus%20serviços%20de%20gestão%20de%20Instagram%20e%20solicitar%20um%20orçamento.", "_blank")}
               >
-                Solicitar Orçamento
+                Solicitar orçamento
                 <TrendingUp className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
               </Button>
               <Button
@@ -63,7 +63,7 @@ const HeroSection = () => {
                 className="group rounded-full font-semibold gap-2 px-7 border-primary/30 hover:border-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300"
                 onClick={() => window.open("https://api.whatsapp.com/send/?phone=555192319521&text=Olá%20Ana%2C%20tenho%20interesse%20na%20sua%20mentoria%20e%20gostaria%20de%20mais%20informações.", "_blank")}
               >
-                Quero Aprender com Você
+                Quero aprender com você
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </Button>
             </div>
@@ -99,7 +99,7 @@ const HeroSection = () => {
                 {clientCountM}+
               </div>
               <div className="text-xs text-muted-foreground font-medium tracking-wide uppercase mt-0.5">
-                Clientes Atendidos
+                Clientes atendidos
               </div>
             </div>
             <div className="w-px h-10 bg-border" />
@@ -111,14 +111,14 @@ const HeroSection = () => {
                 {yearCountM}+
               </div>
               <div className="text-xs text-muted-foreground font-medium tracking-wide uppercase mt-0.5">
-                Anos de Experiência
+                Anos de experiência
               </div>
             </div>
             <div className="w-px h-10 bg-border" />
             <div className="text-center">
               <div className="text-3xl font-display font-bold text-primary">100%</div>
               <div className="text-xs text-muted-foreground font-medium tracking-wide uppercase mt-0.5">
-                Dedicação ao Cliente
+                Dedicação ao cliente
               </div>
             </div>
           </div>
@@ -150,7 +150,7 @@ const HeroSection = () => {
                   <Instagram className="w-4 h-4 text-primary" />
                 </div>
                 <div>
-                  <div className="text-xs font-bold text-primary">150+ Clientes</div>
+                  <div className="text-xs font-bold text-primary">150+ clientes</div>
                   <div className="text-[10px] text-muted-foreground">atendidos com sucesso</div>
                 </div>
               </div>
@@ -161,7 +161,7 @@ const HeroSection = () => {
                   <TrendingUp className="w-4 h-4 text-primary-foreground" />
                 </div>
                 <div>
-                  <div className="text-xs font-bold">Resultados Reais</div>
+                  <div className="text-xs font-bold">Resultados reais</div>
                   <div className="text-[10px] text-primary-foreground/80">estratégias comprovadas</div>
                 </div>
               </div>
@@ -209,7 +209,7 @@ const HeroSection = () => {
                 className="group btn-shimmer rounded-full font-semibold gap-2 px-7"
                 onClick={() => window.open("https://api.whatsapp.com/send/?phone=555192319521&text=Olá%20Ana%2C%20gostaria%20de%20saber%20mais%20sobre%20seus%20serviços%20de%20gestão%20de%20Instagram%20e%20solicitar%20um%20orçamento.", "_blank")}
               >
-                Solicitar Orçamento
+                Solicitar orçamento
                 <TrendingUp className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
               </Button>
               <Button
@@ -218,7 +218,7 @@ const HeroSection = () => {
                 className="group rounded-full font-semibold gap-2 px-7 border-primary/30 hover:border-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300"
                 onClick={() => window.open("https://api.whatsapp.com/send/?phone=555192319521&text=Olá%20Ana%2C%20tenho%20interesse%20na%20sua%20mentoria%20e%20gostaria%20de%20mais%20informações.", "_blank")}
               >
-                Quero Aprender com Você
+                Quero aprender com você
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </Button>
             </div>
@@ -233,7 +233,7 @@ const HeroSection = () => {
                   {clientCountD}+
                 </div>
                 <div className="text-xs text-muted-foreground font-medium tracking-wide uppercase mt-0.5">
-                  Clientes Atendidos
+                  Clientes atendidos
                 </div>
               </div>
               <div className="w-px h-10 bg-border" />
@@ -245,14 +245,14 @@ const HeroSection = () => {
                   {yearCountD}+
                 </div>
                 <div className="text-xs text-muted-foreground font-medium tracking-wide uppercase mt-0.5">
-                  Anos de Experiência
+                  Anos de experiência
                 </div>
               </div>
               <div className="w-px h-10 bg-border" />
               <div>
                 <div className="text-3xl font-display font-bold text-primary">100%</div>
                 <div className="text-xs text-muted-foreground font-medium tracking-wide uppercase mt-0.5">
-                  Dedicação ao Cliente
+                  Dedicação ao cliente
                 </div>
               </div>
             </div>
@@ -285,7 +285,7 @@ const HeroSection = () => {
                   <Instagram className="w-4 h-4 text-primary" />
                 </div>
                 <div>
-                  <div className="text-xs font-bold text-primary">150+ Clientes</div>
+                  <div className="text-xs font-bold text-primary">150+ clientes</div>
                   <div className="text-[10px] text-muted-foreground">atendidos com sucesso</div>
                 </div>
               </div>
@@ -296,7 +296,7 @@ const HeroSection = () => {
                   <TrendingUp className="w-4 h-4 text-primary-foreground" />
                 </div>
                 <div>
-                  <div className="text-xs font-bold">Resultados Reais</div>
+                  <div className="text-xs font-bold">Resultados reais</div>
                   <div className="text-[10px] text-primary-foreground/80">estratégias comprovadas</div>
                 </div>
               </div>

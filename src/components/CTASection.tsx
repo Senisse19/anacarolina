@@ -71,7 +71,7 @@ const CTASection = () => {
               className="group relative btn-shimmer w-full sm:w-auto flex items-center justify-center gap-2 bg-primary-foreground text-primary rounded-full font-semibold px-8 py-4 text-base hover:bg-primary-foreground/90 transition-all duration-300 hover:shadow-[0_0_30px_hsl(40_25%_97%/0.2)] hover:scale-[1.02]"
             >
               <TrendingUp className="w-5 h-5 group-hover:scale-110 transition-transform" />
-              Solicitar Orçamento
+              Solicitar orçamento
             </button>
 
             {/* Secundário — Mentoria */}
@@ -79,7 +79,7 @@ const CTASection = () => {
               onClick={() => window.open("https://api.whatsapp.com/send/?phone=555192319521&text=Olá%20Ana%2C%20tenho%20interesse%20na%20sua%20mentoria%20e%20gostaria%20de%20mais%20informações.", "_blank")}
               className="group w-full sm:w-auto flex items-center justify-center gap-2 border border-primary-foreground/30 text-primary-foreground rounded-full font-semibold px-8 py-4 text-base hover:bg-primary-foreground/10 hover:border-primary-foreground/60 transition-all duration-300"
             >
-              Quero Aprender com Você
+              Quero aprender com você
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </button>
           </div>

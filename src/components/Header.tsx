@@ -68,7 +68,7 @@ const Header = () => {
               Ana Carolina
             </span>
             <span className="hidden sm:inline text-xs text-muted-foreground font-medium tracking-wide">
-              Estrategista Digital
+              Estrategista digital
             </span>
           </button>
 
@@ -101,7 +101,7 @@ const Header = () => {
               className="btn-shimmer gap-2 bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-5 font-medium"
             >
               <TrendingUp className="w-3.5 h-3.5" />
-              Solicitar Orçamento
+              Solicitar orçamento
             </Button>
           </div>
 
@@ -138,7 +138,7 @@ const Header = () => {
             <div className="pt-2 border-t border-border mt-2">
               <Button onClick={openWhatsApp} className="w-full rounded-full btn-shimmer" size="sm">
                 <TrendingUp className="w-4 h-4 mr-2" />
-                Solicitar Orçamento
+                Solicitar orçamento
               </Button>
             </div>
           </nav>
