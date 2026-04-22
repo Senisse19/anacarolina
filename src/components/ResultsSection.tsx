@@ -35,7 +35,7 @@ const ResultsSection = () => {
   const { ref: sectionRef, isVisible } = useScrollAnimation(0.05);
   const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const marqueeRef = useRef<HTMLDivElement>(null);
-  const marqueeAnimRef = useRef<number>();
+  const marqueeAnimRef = useRef<number | null>(null);
   const marqueeX = useRef(0);
 
   const goTo = (index: number) => {
